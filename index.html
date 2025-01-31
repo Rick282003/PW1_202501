@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- PErmite consultar el tipo de dispositivo-->
         <title>Portales Web I Sección 1801</title>
     </head>
     <body>
@@ -127,7 +128,26 @@
                 </p>
             <li>Vectoriales: Inkscape, Core Draw, Sketchbook, Ilustrator</li>
         </ol>
-        
+        <p>
+        <img src="imgs/selfie_web.jpg" alt="Foto de Perfil"/> <!-- alt SI o SI se toca hacer-->
+        </p> <!-- Lo pongo en parrafo para que "Ir al inicio" salga abajo-->
+
+        <p>
+        <picture> <!-- Usar este es mas recomendable -->
+            <source srcset="https://picsum.photos/id/212/1200/720" media="(min-width:1025px)"/> <!-- PC -->
+            <source srcset="https://picsum.photos/id/212/1204/640" media="(min-width:481px")/><!-- TABLET -->
+            <img src="https://picsum.photos/id/212/480/480" alt="Calle en paris"/><!-- MOBIL -->
+        </picture>
+        </p>
+
+        <audio controls> AQUI FALTA CODIGO DE LAS CAPTURAS DE PANTALLA, Y SUBIR REPOSITORIO :)
+            <source src="Multimedia/Curly Hook - Distance(MP3_70K).mp3" type="audio/mp3"/>
+        </audio>
+        <video controls>
+            <!--<source srcset="Multimedia/2024-06-05-1930-33.mp4" type="video/mp4" media="(min-width:1024px)"/>-->
+            <source src="Multimedia/2024-06-05-1930-33.mp4" type="video/mp4"/>
+        </video>
+
 
         <a href="#idx">Ir al inicio</a>
         <h2 id="ch5">Tablas</h2>
