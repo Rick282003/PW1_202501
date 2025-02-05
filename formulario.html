@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="formulario.html" method="GET"><!-- action es direccion donde va la info/GET(usa la url para enviar la info) --><!-- POST(no se ven las variables)-->
+        <label for="txtPrimerNombre">Primer Nombre:</label> <!-- Se usa el ID no el nombre-->
+        <input type="text" name="txtPrimerNombre" id="txtPrimerNombre" 
+        placeholder="Primer Nombre" title="Primer Nombre del solicitante de la apertura de cuenta"/><!-- SI o SI usar placeholder-->
+        <br/>
+
+        <label for="txtApellidoPaterno">Apellido:</label>
+        <input type="text" name="txtApellidoPaterno" id="txtApellidoPaterno" 
+        placeholder="Apellido Paterno" title="Apellido Paterno del solicitante de la apertura de la cuenta"/>
+        <br/>
+
+        <label for="intEdad">Edad:</label>
+        <input type="number" name="intEdad" id="intEdad" min="0" max="100" step="5" value="0"
+        placeholder="Edad del Solicitante" title="Edad del solicitante de la apertura de la cuenta"/>
+        <br/>
+
+        <label for="Contrasenia">Contraseña:</label>
+        <input type="password" name="Contrasenia" id="Contrasenia"
+        placeholder="8 caracteres, 1 mayuscula, 1 simbolo, 1 numero" title="Contraseña de la cuenta del solicitante"/>
+        <br/>
+
+        <label>Color preferido:</label> <br/>
+        <input type="radio" name="cmbColor" id="cmbColorRed" value="red" checked> <!--Las variables name iguales solo se puede seleccionar 1-->
+        <label for="cmbColorRed" title="Color Rojo">&nbsp;Rojo</label><!-- es un espacio, el checked deja seleccionado una opcion-->
+        &nbsp;
+        <input type="radio" name="cmbColor" id="cmbColorBlue" value="blue">
+        <label for="cmbColorBlue" title="Color Azul">&nbsp;Azul</label>
+        &nbsp;
+        <input type="radio" name="cmbColor" id="cmbColorGreen" value="green">
+        <label for="cmbColorGreen" title="Color Verde">&nbsp;Verde</label>
+
+    </form>
+</body>
+</html>
