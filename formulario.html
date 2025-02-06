@@ -28,6 +28,7 @@
         placeholder="8 caracteres, 1 mayuscula, 1 simbolo, 1 numero" title="Contraseña de la cuenta del solicitante"/>
         <br/>
 
+        <!--Radio Button-->
         <label>Color preferido:</label> <br/>
         <input type="radio" name="cmbColor" id="cmbColorRed" value="red" checked> <!--Las variables name iguales solo se puede seleccionar 1-->
         <label for="cmbColorRed" title="Color Rojo">&nbsp;Rojo</label><!-- es un espacio, el checked deja seleccionado una opcion-->
@@ -37,7 +38,29 @@
         &nbsp;
         <input type="radio" name="cmbColor" id="cmbColorGreen" value="green">
         <label for="cmbColorGreen" title="Color Verde">&nbsp;Verde</label>
+        <br/>
 
+        <!--ComboBox-->
+        <label for="cmbPaises">Pais de origen:</label>
+        <select name="cmbPais" id="cmbPaises">
+            <option value="HND">Honduras</option>
+            <option value="ESL">El Salvador</option>
+            <option value="NIC">Nicaragua</option>
+            <option value="GUA">Guatemala</option>
+            <option value="CTR" selected>Costa Rica</option><!-- Lo mismo que checked-->
+            <option value="ARG">Argentina</option>
+            <option value="CHI">Chile</option>
+        </select>
+        <br/>
+
+        <label for="txtBio">Bio Description:</label><br/>
+        <textarea name="txtBio" id="txtBio" cols="50" rows="8" placeholder="Esto es un texto largo"
+        ></textarea><!--cols y rows columnas y filas, no importa el orden de los atributos en verde-->
+        <!--</textarea> esto agarra el espacio y enter dentro del texto-->
+        <input type="submit" name="btnEnviar" id="btnEnviar" value="Enviar"> <!--Para solo texto-->
+        &nbsp;
+        <button type="submit" name="btnEnviar2" id="btnEnviar2">&hearts;<strong>Enviar</strong></button> <!--Para mas que solo texto-->
+        <!--button:no envia nada, en JS se le agrega accion/submit:envio datos al servidor/reset:limpia el formulario-->
     </form>
 </body>
 </html>
