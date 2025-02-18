@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;/* SE APLICA A TODO LO QUE SEPUEDA APLICAR, dentro del body*/
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    align-items: center;
+}
+
+header div {/* En orden solo el div dentro del header*/
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    gap: 0.5rem;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+h3 {
+    color: chocolate;
+    background-color: darkgreen;
+}
+
+p {
+    line-height: 1.5; /* interlineado */
+}

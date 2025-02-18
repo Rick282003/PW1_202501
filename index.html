@@ -5,247 +5,256 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- PErmite consultar el tipo de dispositivo-->
         <title>Portales Web I Sección 1801</title>
+        <link rel="stylesheet" href="CSS/estilos.css"/> <!-- stylesheet OBLIGATORIO, CSS tercer forma-->
+        <!-- CSS segunda forma-->
+        <style>
+            h2{
+                color: green; 
+                background-color: pink;
+            }
+
+        </style>
     </head>
     <body>
-        <h1 id="idx">Portales Web I Primer Parcial</h1>
-        <h2>Richard Bayardo Galo Amador 0615200300421 richardgalo2003@gmail.com</h2>
-        
-        <ul>
-            <li><a href="#ch1">Representacion de contenido de texto</a></li>
-            <li><a href="#ch2">Listas Ordenadas y no Ordenadas</a></li>
-            <li><a href="#ch3">Hipervinculos y Navegacion</a></li>
-            <li><a href="#ch4">Multimedia</a></li>
-            <li><a href="#ch5">Tablas</a></li>
-            <li><a href="#ch6">Formularios</a></li>
-            <li><a href="#ch7">Contenedores Semánticos</a></li>
-        </ul>
+        <header>
+            <div>
+                <img src="https://picsum.photos/id/189/64/64" alt="Brand Logo">
+                <h1 id="idx" style="color: red; background-color: black;">Portales Web I Primer Parcial</h1><!--CSS primera forma-->
+            </div>
+            <nav><!-- Esquema de navegacion -->
+                <ul>
+                    <li><a href="#ch1">Representacion de contenido de texto</a></li>
+                    <li><a href="#ch2">Listas Ordenadas y no Ordenadas</a></li>
+                    <li><a href="#ch3">Hipervinculos y Navegacion</a></li>
+                    <li><a href="#ch4">Multimedia</a></li>
+                    <li><a href="#ch5">Tablas</a></li>
+                    <li><a href="#ch7">Contenedores Semánticos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 id="ch1"">Representación de Contenido de Texto</h2>
+            <h3>Encabezados</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio dolorum autem modi natus temporibus, 
+                enim magni ipsa amet perspiciatis unde hic ex quod nisi illum corrupti dolor et tenetur consequatur.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci aliquid dolorem vel
+                magnam assumenda quaerat porro nihil ipsa voluptates. Id aliquam provident sequi incidunt. 
+                Soluta laudantium magni tenetur alias?
+            </p>
 
-        <h2 id="ch1">Representación de Contenido de Texto</h2>
-        <h3>Encabezados</h3>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio dolorum autem modi natus temporibus, 
-            enim magni ipsa amet perspiciatis unde hic ex quod nisi illum corrupti dolor et tenetur consequatur.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci aliquid dolorem vel
-            magnam assumenda quaerat porro nihil ipsa voluptates. Id aliquam provident sequi incidunt. 
-            Soluta laudantium magni tenetur alias?
-        </p>
+            <p>Hypertext markup language ---> HTML</p>
 
-        <p>Hypertext markup language ---> HTML</p>
+            <p style="line-height: 0.5;">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio dolorum autem modi natus temporibus, 
+                enim magni ipsa amet perspiciatis unde hic ex quod nisi illum corrupti dolor et tenetur consequatur.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci aliquid dolorem vel
+                magnam assumenda quaerat porro nihil ipsa voluptates. Id aliquam provident sequi incidunt. 
+                Soluta laudantium magni tenetur alias
+            </p>
+            <a href="#idx">Ir al inicio</a>
+            <h3>Párrafos</h3>
+            <h4>Lorem Ipsum</h4>
+            <h2 id="ch2">Listas Ordenadas y no Ordenadas</h2>
+            <h3>Listas no Ordenadas</h3>
+            <p>Son listas que no establecen un orden particular, simplemente enuncian 
+                elementos comunes de un dominio
+                <!-- ul un_order list-->
+                <ul>
+                    <li>   
+                        <!-- list itemlist -->
+                        Huevos
+                    </li>
+                    <li>Leche</li>
+                    <li>Frijoles</li>
+                    <li>Pan</li>
+                    <li>Café</li>
+                    <li>
+                        Chucherías
+                        <ul>
+                            <li>Zambos salsa verde</li>
+                            <li>Pringles </li>
+                            <li>Chips habaneros</li>
+                            <li>Palitos Diana</li>
+                            <li>Sneakers</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+            <h3>Listas Ordenadas</h3>
+            <p>
+                Listas Ordenadas si establecen un sentido de orden (jerarquia)
+                <ol>
+                    <li>Motagua</li>
+                    <li>Marathon</li>
+                    <li>Olimpia</li>
+                    <li>Real España</li>
+                    <li>Parrillas One</li>
+                    <li>Lista demo
+                        <ol>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ol>
+                    </li>
+                </ol>
+            </p>
+            <a href="#idx">Ir al inicio</a>
+            <h2 id="ch3">Hipervinculos y Navegación</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe maiores amet dolorem, assumenda 
+                accusantium similique libero minus corrupti modi, nobis odio, cum sint itaque ut nihil quasi quos quisquam repellendus!
+            </p>
+                Hipervinculos relativos van a documentos dentro del mismo sitio (carpeta)<br/>
+                <a href="relativos.html">Ir a la relativa</a><br/> 
+                <a href="Tercer Parcial/Introduccionjavascript.html">Ir a la Introduccion de javascript</a><br/>
+            </p>
+            <!--https://www.unicah.edu:9090/algo/pagina.html  Absoluta completa
+            
+                (Protocolo):// (subdominio)www. (dominio)unicah.edu [puerto]:9090 (recurso)/  
+                Linux apache2 nginx var/www/http  var xamp http/   Todo el recurso(archivos, imagenes, carpetas) se busca en esa carpeta
+                Recuso predeterminado index.html (en caso de no poner ningun recurso, se busca el predeterminado)
+            --> 
 
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio dolorum autem modi natus temporibus, 
-            enim magni ipsa amet perspiciatis unde hic ex quod nisi illum corrupti dolor et tenetur consequatur.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci aliquid dolorem vel
-            magnam assumenda quaerat porro nihil ipsa voluptates. Id aliquam provident sequi incidunt. 
-            Soluta laudantium magni tenetur alias
-        </p>
-        <a href="#idx">Ir al inicio</a>
-        <h3>Párrafos</h3>
-        <h4>Lorem Ipsum</h4>
-        <h2 id="ch2">Listas Ordenadas y no Ordenadas</h2>
-        <h3>Listas no Ordenadas</h3>
-        <p>Son listas que no establecen un orden particular, simplemente enuncian 
-            elementos comunes de un dominio
-            <!-- ul un_order list-->
-            <ul>
-                <li>   
-                    <!-- list itemlist -->
-                     Huevos
-                </li>
-                <li>
-                    Leche
-                </li>
-                <li>
-                    Frijoles
-                </li>
-                <li>
-                    Pan
-                </li>
-                <li>
-                    Café
-                </li>
-                <li>
-                    Chucherías
-                    <ul>
-                        <li>Zambos salsa verde</li>
-                        <li>Pringles </li>
-                        <li>Chips habaneros</li>
-                        <li>Palitos Diana</li>
-                        <li>Sneakers</li>
-                    </ul>
-                </li>
-            </ul>
-        </p>
-        <h3>Listas Ordenadas</h3>
-        <p>
-            Listas Ordenadas si establecen un sentido de orden (jerarquia)
+            <p>
+                <a href="https://www.unicah.edu" target="_blank">UNICAH</a> <!--en tarea no usar el file --> 
+            </p>
+
+            <a href="#idx">Ir al inicio</a>
+            <h2 id="ch4">Multimedia</h2>
+            <p>Una imágen vale por mil palabras.</p>
+            <h4>Hay dos tipos de imagenes</h4>
             <ol>
-                <li>Motagua</li>
-                <li>Marathon</li>
-                <li>Olimpia</li>
-                <li>Real España</li>
-                <li>Parrillas One</li>
-                <li>Lista demo
-                    <ol>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ol>
-                </li>
+                <li>Mapas de Bits: Photoshop, Gimp, Ilustrator</li>
+                    <p>
+                        Dimensiones: Alto, Ancho px <br/>
+                        ppp: (puntos por pulgada):  <br/>
+                        dpi: (dots per inch): 
+                    </p>
+                <li>Vectoriales: Inkscape, Core Draw, Sketchbook, Ilustrator</li>
             </ol>
-        </p>
-        <a href="#idx">Ir al inicio</a>
-        <h2 id="ch3">Hipervinculos y Navegación</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe maiores amet dolorem, assumenda 
-            accusantium similique libero minus corrupti modi, nobis odio, cum sint itaque ut nihil quasi quos quisquam repellendus!
-        </p>
-            Hipervinculos relativos van a documentos dentro del mismo sitio (carpeta)<br/>
-            <a href="relativos.html">Ir a la relativa</a><br/> 
-            <a href="Tercer Parcial/Introduccionjavascript.html">Ir a la Introduccion de javascript</a><br/>
-        </p>
-        <!--https://www.unicah.edu:9090/algo/pagina.html  Absoluta completa
-        
-            (Protocolo):// (subdominio)www. (dominio)unicah.edu [puerto]:9090 (recurso)/  
-            Linux apache2 nginx var/www/http  var xamp http/   Todo el recurso(archivos, imagenes, carpetas) se busca en esa carpeta
-            Recuso predeterminado index.html (en caso de no poner ningun recurso, se busca el predeterminado)
-        --> 
+            <p>
+            <img src="imgs/selfie_web.jpg" alt="Foto de Perfil"/> <!-- alt SI o SI se toca hacer-->
+            </p> <!-- Lo pongo en parrafo para que "Ir al inicio" salga abajo-->
 
-        <p>
-            <a href="https://www.unicah.edu" target="_blank">UNICAH</a> <!--en tarea no usar el file --> 
-        </p>
+            <p>
+            <picture> <!-- Usar este es mas recomendable -->
+                <source srcset="https://picsum.photos/id/212/1200/720" media="(min-width:1025px)"/> <!-- PC -->
+                <source srcset="https://picsum.photos/id/212/1204/640" media="(min-width:481px")/><!-- TABLET -->
+                <img src="https://picsum.photos/id/212/480/480" alt="Calle en paris"/><!-- MOBIL -->
+            </picture>
+            </p>
 
-        <a href="#idx">Ir al inicio</a>
-        <h2 id="ch4">Multimedia</h2>
-        <p>Una imágen vale por mil palabras.</p>
-        <h4>Hay dos tipos de imagenes</h4>
-        <ol>
-            <li>Mapas de Bits: Photoshop, Gimp, Ilustrator</li>
-                <p>
-                    Dimensiones: Alto, Ancho px <br/>
-                    ppp: (puntos por pulgada):  <br/>
-                    dpi: (dots per inch): 
-                </p>
-            <li>Vectoriales: Inkscape, Core Draw, Sketchbook, Ilustrator</li>
-        </ol>
-        <p>
-        <img src="imgs/selfie_web.jpg" alt="Foto de Perfil"/> <!-- alt SI o SI se toca hacer-->
-        </p> <!-- Lo pongo en parrafo para que "Ir al inicio" salga abajo-->
-
-        <p>
-        <picture> <!-- Usar este es mas recomendable -->
-            <source srcset="https://picsum.photos/id/212/1200/720" media="(min-width:1025px)"/> <!-- PC -->
-            <source srcset="https://picsum.photos/id/212/1204/640" media="(min-width:481px")/><!-- TABLET -->
-            <img src="https://picsum.photos/id/212/480/480" alt="Calle en paris"/><!-- MOBIL -->
-        </picture>
-        </p>
-
-        <audio controls>
-            <source src="Multimedia/Curly Hook - Distance(MP3_70K).mp3" type="audio/mp3"/>
-        </audio>
-        <video controls>
-            <!--<source srcset="Multimedia/2024-06-05-1930-33.mp4" type="video/mp4" media="(min-width:1024px)"/>-->
-            <source src="Multimedia/2024-06-05-1930-33.mp4" type="video/mp4"/>
-        </video>
+            <audio controls>
+                <source src="Multimedia/Curly Hook - Distance(MP3_70K).mp3" type="audio/mp3"/>
+            </audio>
+            <video controls>
+                <!--<source srcset="Multimedia/2024-06-05-1930-33.mp4" type="video/mp4" media="(min-width:1024px)"/>-->
+                <source src="Multimedia/2024-06-05-1930-33.mp4" type="video/mp4"/>
+            </video>
 
 
-        <a href="#idx">Ir al inicio</a>
-        <h2 id="ch5">Tablas</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. P
-            rovident, veritatis. Tempora atque nulla quod excepturi, accusantium dolorem, a
-            spernatur ducimus ab corporis natus ad ipsam. Deleniti doloribus est odio reprehenderit esse.
-        </p>
-        
-        <table border="1"><!--preferiblemente no usarlo-->
-            <thead>
-                <tr>
-                    <th colspan="6">Tabla de Ventas Promedio del 2025 de la Trucha de Doña Lidia</th><!--Agarra el espacio de 6 celdas-->
-                </tr>
-                <tr><!--celdas de enacabezado y de datos-->
-                    <th>Región</th><!--celda-->
-                    <th>Ciudad</th>
-                    <th>Q1</th>
-                    <th>Q2</th>
-                    <th>Q3</th>
-                    <th>Q4</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2">Norte</td><!--datos o filas, el rowspan agarra dos filas -->
-                    <td>La Ceiba</td>
-                    <td>80</td>
-                    <td>76</td>
-                    <td>84</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <!--<td>Norte</td>-->
-                    <td>San Pedro Sula</td>
-                    <td>90</td>
-                    <td>91</td>
-                    <td>89</td>
-                    <td>95</td>
-                </tr>
-                <tr>
-                    <td rowspan="3">Centro</td>
-                    <td>Comayagua</td>
-                    <td>82</td>
-                    <td>83</td>
-                    <td>82</td>
-                    <td>83</td>
-                </tr>
-                <tr>
-                    <!--<td>Centro</td>-->
-                    <td>Tegus</td>
-                    <td>87</td>
-                    <td>86</td>
-                    <td>87</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <!--<td>Centro</td>-->
-                    <td>Danlí</td>
-                    <td>75</td>
-                    <td>76</td>
-                    <td>72</td>
-                    <td>73</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Sur</td>
-                    <td>Choluteca</td>
-                    <td>84</td>
-                    <td>83</td>
-                    <td>80</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <!--<td>Sur</td>-->
-                    <td>San Marcos de Colón</td>
-                    <td>72</td>
-                    <td>78</td>
-                    <td>80</td>
-                    <td>79</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="2">Promedio</td><!--Agarra el espacio de 2 celdas-->
-                    <td>87</td>
-                    <td>89</td>
-                    <td>84</td>
-                    <td>88</td>
-                </tr>
-            </tfoot>
-        </table>
+            <a href="#idx">Ir al inicio</a>
+            <h2 id="ch5">Tablas</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. P
+                rovident, veritatis. Tempora atque nulla quod excepturi, accusantium dolorem, a
+                spernatur ducimus ab corporis natus ad ipsam. Deleniti doloribus est odio reprehenderit esse.
+            </p>
+            
+            <table border="1"><!--preferiblemente no usarlo-->
+                <thead>
+                    <tr>
+                        <th colspan="6">Tabla de Ventas Promedio del 2025 de la Trucha de Doña Lidia</th><!--Agarra el espacio de 6 celdas-->
+                    </tr>
+                    <tr><!--celdas de enacabezado y de datos-->
+                        <th>Región</th><!--celda-->
+                        <th>Ciudad</th>
+                        <th>Q1</th>
+                        <th>Q2</th>
+                        <th>Q3</th>
+                        <th>Q4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Norte</td><!--datos o filas, el rowspan agarra dos filas -->
+                        <td>La Ceiba</td>
+                        <td>80</td>
+                        <td>76</td>
+                        <td>84</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <!--<td>Norte</td>-->
+                        <td>San Pedro Sula</td>
+                        <td>90</td>
+                        <td>91</td>
+                        <td>89</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Centro</td>
+                        <td>Comayagua</td>
+                        <td>82</td>
+                        <td>83</td>
+                        <td>82</td>
+                        <td>83</td>
+                    </tr>
+                    <tr>
+                        <!--<td>Centro</td>-->
+                        <td>Tegus</td>
+                        <td>87</td>
+                        <td>86</td>
+                        <td>87</td>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <!--<td>Centro</td>-->
+                        <td>Danlí</td>
+                        <td>75</td>
+                        <td>76</td>
+                        <td>72</td>
+                        <td>73</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Sur</td>
+                        <td>Choluteca</td>
+                        <td>84</td>
+                        <td>83</td>
+                        <td>80</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <!--<td>Sur</td>-->
+                        <td>San Marcos de Colón</td>
+                        <td>72</td>
+                        <td>78</td>
+                        <td>80</td>
+                        <td>79</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Promedio</td><!--Agarra el espacio de 2 celdas-->
+                        <td>87</td>
+                        <td>89</td>
+                        <td>84</td>
+                        <td>88</td>
+                    </tr>
+                </tfoot>
+            </table>
 
-        <a href="#idx">Ir al inicio</a>
-        <h2 id="ch6">Formularios</h2>
-        <a href="formulario.html" target="_blank">Ir al Formulario</a><br/>
+            <a href="#idx">Ir al inicio</a>
+            <h2 id="ch6">Formularios</h2>
+            <a href="formulario.html" target="_blank">Ir al Formulario</a><br/>
 
-        <a href="#idx">Ir al inicio</a>
-        <h2 id="ch7">Contenedores Semánticos</h2>
+            <a href="#idx">Ir al inicio</a>
+            <h2 id="ch7">Contenedores Semánticos</h2>
 
-        <a href="#idx">Ir al inicio</a>
+            <a href="#idx">Ir al inicio</a>
+        </main>
+    <footer>
+        Copyrigth 2025 UNICAH
+    </footer>
     </body>
 </html>
