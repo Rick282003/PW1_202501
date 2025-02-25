@@ -80,6 +80,7 @@ header div img {
     max-width: 1024px;
     margin: 0.5rem auto;
     padding: 0.5rem;
+    overflow: hidden;
 }
 
 .cardContainer {
@@ -127,4 +128,28 @@ header div img {
 
 .demoEmRem p {
     font-size: 2rem;
+}
+
+.smallTags {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+}
+
+.smallTags li {
+    margin: 1rem 0rem;
+}
+
+.smallTags li div {
+    background-color: rgb(237, 213, 58);
+    padding: 0.8rem 0.5rem;
+    border: 1px solid rgb(95, 152, 9);
+}
+
+.smallTags li div img, .smallTags li div span {
+    display: block;
 }
