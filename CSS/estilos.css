@@ -153,3 +153,67 @@ header div img {
 .smallTags li div img, .smallTags li div span {
     display: block;
 }
+
+/*HERO PANEL*/
+.hero-panel {
+    position: relative; /*Declara nuevo plano cartesiano*/
+    width: 100%;
+    height: 80vh;
+    
+}
+
+.hero-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-panel div {
+    /*top bottom right left*/
+    position: absolute;
+    top: 50%; /*y*/
+    left: 50%; /*x*/
+    
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    box-shadow: 1px 1px 3px #000;
+    border-radius: 9px;
+    transform: translate(-50%, -50%); /*izquierda, arriba*/
+    text-align: center;
+}
+
+.hero-panel div.q1 { /*herencia*/
+    top: 25%;
+    left: 25%;
+}
+.hero-panel div.q2 {
+    top: 25%;
+    left: 75%;
+}
+.hero-panel div.q3 {
+    top: 75%;
+    left: 25%;
+}
+.hero-panel div.q4 {
+    top: 75%;
+    left: 75%;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #eee;
+    background-color: steelblue;
+    padding: 0.75rem 1rem;
+    border-radius: 17px;
+    box-shadow: 1px 1px 3px #1c3448;
+}
+
+
+/*Solo por estilo*/
+.hero-panel div h2 {
+    color: #000;
+    background: none;
+}
