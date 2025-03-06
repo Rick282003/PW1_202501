@@ -11,8 +11,10 @@ p {
     line-height: 1.5; /* interlineado */
 }
 
+/*MOBIL*/
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-color: #000;
     align-items: center;
@@ -23,20 +25,30 @@ header div {/* En orden solo el div dentro del header*/
     align-items: center;
 }
 
+header nav {
+    width: 100%;
+}
+
 header nav ul {
-    display: flex;
     list-style: none;
     padding: 0px;
-    gap: 0.5rem;
+    gap: 0.25rem;
+    width: 100%;
+}
+
+header nav ul li {
+    width: 100%;
 }
 
 header nav ul li a {
     display: inline-block;
-    padding: 0.75rem 1.5rem; /* Clickeable en area */
+    padding: 0.5rem 0.75rem; /* Clickeable en area */
     /*margin: 0.75rem 1.5rem;*/
     color: #fff;
     text-decoration: none;
-    text-align: center;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    /*text-align: center;*/
     /*border: 2px solid red;*/
     /* Trouble TRBL Top   Right  Bottom  Left 
         padding: 0.75rem 1.5rem 0.75rem 1.5rem
@@ -216,4 +228,72 @@ header div img {
 .hero-panel div h2 {
     color: #000;
     background: none;
+}
+
+/*
+Media Queries sirven para Consultar Metadata del Dispositivo como IF
+(ancho=min-width
+disposition "Verical, Horizontal"
+zoom=scale
+density "que tantos px hay en un px, mas nitido"
+)
+
+Sin media querry                Mobile
+
+media querry min-width 768px    Tablet
+
+media querry min-width 1024px   Desktop
+
+media querry min-width 2300px   Extra Wide
+*/
+
+
+/*TABLET*/
+@media (min-width: 768px) {
+
+    header{
+        background-color: #777;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        width: auto;
+    }
+
+    header nav ul li a {
+        border-bottom: none;
+    }
+
+}
+
+/*DESKTOP*/
+@media (min-width: 1024px) {
+
+    header{
+        background-color: darkred;
+        flex-direction: row;
+    }
+
+    header nav {
+        width: auto;
+    }
+
+    header nav ul li {
+        width: auto;
+    }
+    
+}
+
+/*EXTRA WIDE*/
+@media (min-width: 2300px) {
+
+    header{
+        background-color: black;
+    }
+
 }
