@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+serifas - serif
+sin serifas - sans-serif
+monosespaciadas - monospace
+*/
+
+
 * {
-   box-sizing: border-box;/* SE APLICA A TODO LO QUE SEPUEDA APLICAR, dentro del body*/
+    font-family: "Roboto", Arial, sans-serif;
+    box-sizing: border-box;/* SE APLICA A TODO LO QUE SEPUEDA APLICAR, dentro del body*/
 }
 
 body {
@@ -8,7 +17,7 @@ body {
 
 }
 p {
-    line-height: 1.5; /* interlineado */
+    line-height: 2; /* interlineado, recomendado "1.5" */
 }
 
 /*MOBIL*/
@@ -67,6 +76,8 @@ header div h1 {
     font-size: 1.1rem;
     margin: 0px;
     color: #fff;
+    text-shadow: 1px 1px 3px #000;
+    /*text-decoration: line-through;*/
 }
 
 header div img {
