@@ -7,21 +7,34 @@
         <title>Portales Web I Sección 1801</title>
         <link rel="stylesheet" href="CSS/estilos.css"/> <!-- stylesheet OBLIGATORIO, CSS tercer forma-->
         <link rel="stylesheet" href="CSS/grid.css"/>
+        <script src="JS/script.js"></script> <!-- JavaScript tercera forma-->
         <!-- CSS segunda forma-->
         <style>
             h2{
                 color: green; 
                 background-color: pink;
             }
-
         </style>
+        
+        <!-- JavaScript segunda dorma-->
+        <script> 
+            let mensajeAMostrar = "Click al Presionar el ID ch1"; //Variable, USAR ; AL FINAL DE CADA LINEA
+            document.addEventListener("DOMContentLoaded", ()=>{//document es una variable reservada
+                let ch1Element = document.getElementById("ch1");
+                ch1Element.addEventListener("click", (e)=>{
+                    e.preventDefault;//Evita que se ejecute el evento por defecto
+                    e.stopPropagation;//Evita que se propague el evento
+                    alert("Click al Presionar el ID ch1");
+                });
+            });//()=>{} es una funcion de flecha gorda anonima
+        </script>
     </head>
     <body>
         <header>
             <div>
                 <img src="https://picsum.photos/id/96/64/64" alt="Brand Logo">
                 <!--<h1 id="idx" style="color: red; background-color: black;">Portales Web I</h1>CSS primera forma-->
-                <h1 id="idx">Portales Web I</h1>
+                <h1 id="idx" onclick="alert('Clicked on H1 Portales Web 1')">Portales Web I</h1><!-- JavaScript primera forma-->
             </div>
             <nav><!-- Esquema de navegacion -->
                 <ul>

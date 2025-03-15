@@ -11,6 +11,7 @@ monosespaciadas - monospace
     box-sizing: border-box;/* SE APLICA A TODO LO QUE SEPUEDA APLICAR, dentro del body*/
 }
 
+
 body {
     margin: 0px;
     padding: 0px;
