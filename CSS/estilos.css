@@ -343,6 +343,48 @@ header div img {
     background: none;
 }
 
+/*FORMULARIO PARA JAVASCRIPT*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form div {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+form div label {
+    font-weight: bold;
+    width: 30%;
+}
+
+form div input {
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 70%;
+}
+
+form div button {
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+}
+
+.right {
+    justify-content: flex-end;
+}
+/*FORMULARIO PARA JAVASCRIPT*/
+
 /*
 Media Queries sirven para Consultar Metadata del Dispositivo como IF
 (ancho=min-width
